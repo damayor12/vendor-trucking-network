@@ -1,5 +1,7 @@
 variable "aws_region" {}
 
+variable "aws_profile" {}
+
 variable "app_name" {
   default = "vendor-network"
   description = "name of the app"
@@ -14,5 +16,5 @@ variable "private_subnets" {
 }
 
 variable "availabilty_zones" {
-  default = ["us-east-1a", "us-east-1b"]
+  default = "us-east-1"
 }
