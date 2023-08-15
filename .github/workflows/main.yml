@@ -50,6 +50,7 @@ jobs:
           terraform init -backend-config="bucket=${AWS_BUCKET_NAME}" 
           -backend-config="key=${AWS_BUCKET_KEY_NAME}" 
           -backend-config="region=${AWS_REGION}"
+          
       - name: Terraform Validate
         id: validate
         run: terraform validate -no-color
