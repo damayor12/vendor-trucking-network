@@ -1,7 +1,5 @@
 variable "aws_region" {}
 
-variable "aws_profile" {}
-
 variable "app_name" {
   default = "vendor-network"
   description = "name of the app"
